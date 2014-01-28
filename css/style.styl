@@ -1,0 +1,760 @@
+
+color1 = #F47932
+color2 = #4E4B4C
+color3 = #FFFFFF
+color_sponsors = #FBFBFB
+color_contactos = #3C3C3C
+color_legales = #272727
+
+tipo-letra  = "HelveticaNeueLTStd","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif
+size-letra1 = 16px
+size-letra2 = 11px
+
+.clearfix
+  display inline-block
+
+.clear
+  clear both
+ 
+html[xmlns] .clearfix
+  display block
+ 
+* html .clearfix
+  height 1%
+
+p
+  letter-spacing 1.5px
+
+a
+  padding 0px
+  margin 0px
+  display inline-block
+
+@font-face 
+  font-family 'hispanicomm'
+  src url('../font/hispanicomm.eot?80713369');
+  src url('../font/hispanicomm.eot?80713369#iefix') format('embedded-opentype'), url('../font/hispanicomm.woff?80713369') format('woff'), url('../font/hispanicomm.ttf?80713369') format('truetype'), url('../font/hispanicomm.svg?80713369#hispanicomm') format('svg')
+  font-weight normal
+  font-style normal
+
+
+@font-face 
+  font-family 'HelveticaNeueLTStd'
+  font-stretch normal
+  font-style normal
+  font-weight normal
+  src url('../font/HelveticaNeueLTStd-Cn.otf') format("opentype")
+
+
+@font-face 
+  font-family 'HelveticaNeueULTStd'
+  font-stretch ultra-condensed
+  font-style normal
+  font-weight light
+  src url('../font/HelveticaNeueLTStd-UltLt.otf') format("opentype")
+
+@import 'normalize.min.styl'
+@import 'responsiveslides.styl'
+
+#main
+  input 
+    padding 5px
+
+.innerShadow  
+  box-shadow -2px -1px 20px #4e4b4c
+  box-shadow 0 0
+  // height 95px
+  position relative 
+  // top 0px
+  padding-bottom 20px
+  width 100%
+  z-index 1
+
+  >div
+    position relative
+    max-width 930px
+    margin 0 auto
+    width 100%
+
+#bg-slider
+  background-color color1
+  display none
+  // position absolute
+  width 100%
+  // height 416px
+  // height 26px
+  // top 95px
+  z-index -1
+  box-shadow -3px 2px 5px #4e4b4c
+
+.icon-menu
+  display none
+  height 32px
+  margin 0
+  position absolute
+  right 10px
+  text-align center
+  top 0px
+  width 32px
+
+  &:after
+    content '\E80E'
+    font-family hispanicomm
+    font-size 32px
+    text-align center
+
+header
+
+  .logo
+      
+    img
+      padding-top 9px
+
+  nav
+    color color2
+    height 80px
+    float right
+    // position absolute
+    right 0px
+    top 5px
+    // vertical-align middle
+    z-index 1
+
+    a
+      color inherit
+      display block
+
+    ul
+      list-style none
+      margin 0px
+      padding 0px
+
+      li
+        // background-color color3
+        cursor pointer
+        cursor hand
+        margin 2px 14px
+        // padding 2px
+        text-align center
+        text-transform uppercase
+        width 130px
+        width auto
+
+      li:hover
+        color color1
+      
+    >ul      
+      height 50px
+      padding-top 30px
+      
+      >li
+        float left
+
+        >ul
+          background-color color_legales
+          color color2
+          display none
+          overflow hidden
+          padding 0px          
+            
+          li
+            background-color inherit
+            color color_sponsors
+            font-size 14px
+            padding 3px 4px
+            margin 4px 0px
+            max-width 122px
+            text-align left
+
+            &:hover
+              color #ffffff
+              background-color color1
+
+      li:hover
+
+        >ul
+          display block 
+    .icon-arrow-right
+      text-align left  
+
+    .icon-arrow-right:hover:before
+      content 'ˇ'
+    
+    #portafolio
+      padding-left 12px
+      width 120px
+
+    #idioma
+      text-align left
+      width 85px
+
+      ul
+
+        li
+          width auto
+
+    // #idioma:before
+    //   content '\e80a'
+    //   font-family hispanicomm
+    //   font-size 12px
+    //   margin-right 5px
+    //   // vertical-align top
+
+
+  .rslides
+    background-color color3
+    // height 416px
+    //position relative
+    //top 10px
+    // width 100%
+    // margin-top 10px
+    overflow hidden
+
+  #nav2
+    // position relative
+    // vertical-align middle
+    background-color color1
+    box-shadow -3px 2px 5px #4e4b4c
+    color #ffffff
+    float none
+    height 26px
+    margin 0 auto
+    overflow hidden
+    position static
+    right 0px
+    top 95px
+    width 100%
+    z-index 0
+
+    >ul
+      height 100%
+      margin 0 auto
+      padding 0px
+      width 900px
+
+      >li
+        background none
+        height 100%
+        margin 0px 5px
+        text-align left
+        width auto
+        font-size 15px
+        letter-spacing -1.1px
+
+        &:hover
+          color color2
+
+        &:after
+          content ' '
+
+        &.slash
+          padding 4px 0
+
+          &:after
+            content '/'
+
+          &:hover
+            color color3
+
+
+        &.actual
+          color color3
+
+        a
+          display block
+          line-height 100%
+          padding 5px 0
+          margin 0px
+
+    &.nav3 
+      background-color white
+
+      ul
+      
+        li
+
+          &:hover
+            color color1 !important
+        
+          &.slash:hover
+            color color2 !important
+
+#wrap
+  color color2
+  font-family HelveticaNeueLTStd
+  margin 0 auto
+  max-width 930px
+  // position relative
+  width 100%
+  z-index  1  
+
+  #contenido
+    opacity 0
+    //min-height 500px
+    margin-top 30px
+    position relative
+    // min-height 370px
+    width 100%
+    z-index 0    
+
+    article
+      cursor hand
+      cursor pointer
+      display inline-block
+      // float left
+      height 260px
+      margin 0px 4px 10px
+      width 220px
+      
+      figure
+
+        img
+          height auto
+          width 100%
+
+      span
+        display block
+        padding-left 10px
+
+      .empresa
+        color color2
+        height 40px
+
+      .giro
+        color #bdbdbd
+        height 20px
+
+      &:hover
+        box-shadow 0px 0px 20px 0px #000
+
+        &:after
+          color color1
+  
+    #clientes_servicio
+      height 370px
+
+    #OurCompany
+      font-size 18px
+      line-height 24px
+      margin 0px auto 60px
+      width 80%
+
+footer
+  //bottom 0px
+  // height 550px
+  //position absolute
+  width 100%
+
+  >div
+   margin 0 auto
+
+   >div
+    margin 0 auto
+    width 930px
+  
+  #shares
+    background-color color3
+    display none
+    height 60px
+    width 100%
+
+    >div
+      margin 0 auto
+      text-align center
+      width 930px
+
+  #sponsors
+    background-color color_sponsors
+    height 160px
+    margin 0 auto
+    overflow hidden
+    text-align center
+    width 100%
+
+    div.titulo
+      background-color #fbfbfb
+      height 40px
+      margin 0px
+      padding-top 30px
+      position relative
+      width 100%
+      z-index 99
+
+      span
+        color #bbb
+        font-family 'HelveticaNeueULTStd'
+        font-size 20px
+
+        strong
+          color inherit
+          font-family HelveticaNeueLTStd
+
+    .list_carousel
+      width 900px
+      height 70px
+      display block
+      margin 0 auto
+      padding 0
+      overflow hidden
+
+    .caroufredsel_wrapper
+      min-width 100%
+      height 100%
+      display block
+
+      // .caroufredsel_wrapper
+      // min-width 100%
+      // height 100%
+      // display block
+
+    #logos
+      height 70px
+      margin 0 !important
+      max-width 100%
+      padding 0 !important
+      position relative
+      top -165px
+      top 0px
+      width 930px
+
+      li
+        display inline-block
+        float left
+        list-style none
+        margin 5px 0
+        padding 0
+        text-align center
+        // width 25%
+
+        a
+          margin 0
+          padding 0
+          height 100%
+          width 100%
+          display inline-block
+          line-height 60px
+          vertical-align middle
+          text-align center
+
+        img
+          display inline-block
+          height 70px
+          margin 0px 20px 60px
+          // max-height 70px
+          // max-width 175px
+          padding 0
+          vertical-align middle
+
+  #contactos
+    background-color color_contactos
+    color color3
+    font-family HelveticaNeueULTStd
+    height 220px
+    width 100%
+
+    div
+      height 220px
+
+    article
+      color color3
+      display inline-block
+      float left
+      font-size 14px
+      padding 30px 30px 0px
+      text-align left
+      width 250px
+      
+      h2
+        color color3
+        display inline-block
+        margin-right 5px
+
+        strong
+          color color1
+
+      >a
+        color color3
+        font-family hispanicomm
+        font-size 25px
+        margin 0 5px
+        text-decoration none
+
+      p
+        margin 0px
+        text-align left
+        letter-spacing 1px
+
+      span 
+        display block
+        letter-spacing 1px          
+
+      span:before
+        font-family hispanicomm 
+        font-size 20px
+        margin-right: 10px;
+
+      .lugar:before
+        content '\e807'
+
+      .telefono:before
+        content '\e808'
+
+      .mail
+        a
+          color #ffffff
+          font-family HelveticaNeueULTStd
+          font-size 14px
+
+      .mail:before
+        content '\e806'
+
+      .facebook:before
+        content '\e801'
+
+      .twitter:before
+        content '\e804'
+
+      .gplus:before
+        content '\e800'  
+
+      figure
+
+        span
+          color color1
+          margin-top 42px
+          display inline-block
+
+        img
+          width 130px
+          margin-left 10px
+          position relative
+          top 10px
+
+  #legales
+    background-color color_legales
+    color #6e6f6d
+    font-size 12px
+    height 60px
+    width 100%
+
+    span
+      display inline-block
+      margin 20px 0px 20px 10px
+      height 20px
+
+    ul
+      list-style none
+      display inline-block
+      float right
+      margin 20px 10px 20px 0px
+      padding 0px
+      height 20px
+
+      li
+        display inline-block
+        margin 0 10px
+
+// Cliente
+.cliente
+  color #4E4B4C
+  background-color #dee0df !important
+  font-family HelveticaNeueLTStd
+  min-height 370px  
+  overflow hidden
+  width 930px
+  z-index 0 !important
+  
+  >div.imgs_cliente
+    background-color #c4c4c4 !important
+    float left
+    height 100%
+    width 423px
+    overflow hidden
+    margin 0
+    display block !important
+    
+    img
+      min-height 100%
+      max-width 100%
+
+  >div+div
+    float left
+    min-height 290px
+    margin 80px 60px 0px
+    max-width 345px
+
+    h2
+      margin 0px
+
+    a
+      color #4E4B4C
+
+    .line
+      height 24px
+      background url("img/line.png") repeat-x
+
+    p
+      font-family HelveticaNeueULTStd
+
+// END clientes
+
+//empresa
+#empresa
+  @extend .cliente
+  float none !important
+  
+  >div.imgs_empresa
+    @extend .cliente >div.imgs_cliente
+    background-color inherit !important
+    height 520px
+    margin-top 90px
+
+    img
+      max-width 465px
+      // max-height 465px
+      min-height 0px
+
+  >div+div
+    display inline-block
+    float none
+    margin 40px 40px 0
+    min-width 385px
+
+    p
+      margin 0px 0 20px
+
+      b
+        font-family HelveticaNeueLTStd
+
+//END empresa
+
+.separador2px
+  height 2px
+  background-color color1
+
+.separador7px
+  @extend .separador2px
+  height 7px
+
+.color_sponsors
+  background-color color_sponsors
+
+.slash:last-child:after
+  content ' '
+
+.slash:hover
+  color color2 !important
+  cursor default !important
+
+
+// animate spin --------------------------------------------------------
+#fancybox-loading div {
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  display: inline-block;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
+@import 'jquery.fancybox'
+@import 'nivo-slider'
+@import 'default'
+@import 'hispanicomm-embedded'
+
+
+//Media Querys ------------------------------------------------------------------------------------------------------------------------------------
+// @media all and (max-width: 930px)
+//   .logo
+//     width 310px
+//     margin 0 auto
+//     display block
+
+//   .ico-menu
+//     display inline-block
+
+//     &:active
+//       color color1
+
+//   nav
+//     display none
+
+//   #wrap #contenido article
+//     width 32% 
+
+

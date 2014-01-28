@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'hispanicomm';
+  src: url('../font/hispanicomm.eot?45601973');
+  src: url('../font/hispanicomm.eot?45601973#iefix') format('embedded-opentype'),
+       url('../font/hispanicomm.woff?45601973') format('woff'),
+       url('../font/hispanicomm.ttf?45601973') format('truetype'),
+       url('../font/hispanicomm.svg?45601973#hispanicomm') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'hispanicomm';
+    src: url('../font/hispanicomm.svg?45601973#hispanicomm') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "hispanicomm";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-spin1:before { content: '\e80b'; } /* '' */
+.icon-globe:before { content: '\e80a'; } /* '' */
+.icon-menu:before { content: '\e80e'; } /* '' */
+.icon-arrow-left:before { content: '\2039'; } /* '‹' */
+.icon-arrow-right:before { content: '\203a'; } /* '›' */
+.icon-arrow-up:before { content: '\2c6'; } /* 'ˆ' */
+.icon-arrow-down:before { content: '\2c7'; } /* 'ˇ' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-gplus:before { content: '\e800'; } /* '' */
+.icon-spin2:before { content: '\e80c'; } /* '' */
+.icon-pinterest:before { content: '\e803'; } /* '' */
+.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-youtube:before { content: '\e805'; } /* '' */
+.icon-vcard:before { content: '\e806'; } /* '' */
+.icon-location:before { content: '\e807'; } /* '' */
+.icon-phone:before { content: '\e808'; } /* '' */
+.icon-search:before { content: '\e809'; } /* '' */
+.icon-instagramm:before { content: '\e802'; } /* '' */
