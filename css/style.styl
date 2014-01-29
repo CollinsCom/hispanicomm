@@ -655,82 +655,74 @@ footer
   animation: spin 1s infinite linear;
   display: inline-block;
 }
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-ms-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
 @keyframes spin {
-  0% {
+  from {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  100% {
+  to {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
-// ------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------
+// error 404--------------------------------------------------------------------------------------------------
+#tumbleweed 
+  height 300px
+  overflow hidden
+
+  >span
+    display block
+    text-align center
+    text-shadow 2px 2px 5px
+    padding .2em 0
+
+  >span:first-child
+    font-size 72px
+
+  >span+span
+    font-size 24px
+
+  img
+    position relative
+    height 50px
+    -moz-animation: move 15s infinite linear;
+    -o-animation: move 15s infinite linear;
+    -webkit-animation: move 15s infinite linear;
+    animation: move 15s infinite linear;
+
+#goog-fixurl
+  padding 50px 0px
+
+
+// animate move--------------------------------------------------------------------------------------------------
+@keyframes move 
+  0%
+    top 0px
+    left -60px
+    -moz-transform rotate(0deg)
+    -o-transform rotate(0deg)
+    -webkit-transform rotate(0deg)
+    transform rotate(0deg)  
+
+  10%, 30%, 50%, 70%
+    top 50px
+
+  5%, 20%, 40%, 60%, 80%, 90%, 100%
+    top 90px
+
+  90%, 100%
+    left 930px
+    -moz-transform rotate(3590deg)
+    -o-transform rotate(3590deg)
+    -webkit-transform rotate(3590deg)
+    transform rotate(3590deg)
+// ---------------------------------------------------------------------------------------------------------
 
 @import 'jquery.fancybox'
 @import 'nivo-slider'

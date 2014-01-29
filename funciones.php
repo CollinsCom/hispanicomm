@@ -48,7 +48,7 @@
 
         <!-- <link rel="stylesheet" href="css/default/default.css" type="text/css" /> -->
 
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.ico">
       </head>
       <body>
         
@@ -424,6 +424,24 @@
     <?php
   }
 
+  function error(){
+    ?>
+      <div id="tumbleweed">
+        <span><?=$this->todos_textos['error404_1']?></span>
+        <span><?=$this->todos_textos['error404_2']?></span>
+        <img src="img/tumbleweed.png" alt="">
+      </div>
+      <script type="text/javascript">
+        var GOOG_FIXURL_LANG = '<?=$this->speech?>';
+        var GOOG_FIXURL_SITE = 'http://www.hispanicomm.com'
+      </script>
+      <script type="text/javascript"
+        src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+      </script>
+
+    <?php 
+  }
+
   function get_footer(){
     ?>        <div class="clear"></div>
             </div><!-- fin del #contenido -->
@@ -524,7 +542,6 @@
   }//fin get_footer
 
 
-
   public function Deploy($page){
     switch ($page) {
 
@@ -573,6 +590,7 @@
 
       case '404':
         $this->get_head();
+        $this->error();
         $this->get_footer();
         break;
     
